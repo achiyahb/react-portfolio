@@ -7,7 +7,10 @@ const useStyles = makeStyles((theme) => ({
             alignItems: 'center',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center'
+            justifyContent: 'center',
+        },
+        highLight:{
+            color:'#e31b6d'
         }
     }
 ));
@@ -19,7 +22,7 @@ export default function Welcome() {
             <div className='text'>
                 <h1>
                     {"Hello, I'm "}
-                    <span>
+                    <span className={classes.highLight}>
                     Achiya Haviv
                </span>{" ."}
                 </h1>
